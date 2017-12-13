@@ -31,7 +31,7 @@ namespace AutomationFramework.Features
         public virtual void FeatureSetup()
         {
             testRunner = TechTalk.SpecFlow.TestRunnerManager.GetTestRunner();
-            TechTalk.SpecFlow.FeatureInfo featureInfo = new TechTalk.SpecFlow.FeatureInfo(new System.Globalization.CultureInfo("en-US"), "Login", "\tAs a Agency Agent user,\r\n\tI would like to be able to login into APEX Portal", ProgrammingLanguage.CSharp, ((string[])(null)));
+            TechTalk.SpecFlow.FeatureInfo featureInfo = new TechTalk.SpecFlow.FeatureInfo(new System.Globalization.CultureInfo("en-US"), "Login", "\tAs a user,\r\n\tI would like to be able to do something at the app", ProgrammingLanguage.CSharp, ((string[])(null)));
             testRunner.OnFeatureStart(featureInfo);
         }
         
@@ -66,7 +66,7 @@ namespace AutomationFramework.Features
         [NUnit.Framework.TestAttribute()]
         [NUnit.Framework.DescriptionAttribute("Login as a Agency Agent By Example")]
         [NUnit.Framework.CategoryAttribute("login")]
-        [NUnit.Framework.TestCaseAttribute("jimmie.carr@travelleaders.com", "zaq1ZAQ!", "94326", null)]
+        [NUnit.Framework.TestCaseAttribute("pepe@travelleaders.com", "zaq1ZAQ!", "94326", null)]
         public virtual void LoginAsAAgencyAgentByExample(string username, string password, string cid, string[] exampleTags)
         {
             string[] @__tags = new string[] {
@@ -79,17 +79,13 @@ namespace AutomationFramework.Features
 #line 6
 this.ScenarioSetup(scenarioInfo);
 #line 7
- testRunner.Given("that I navigate to the APEX Portal Url", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
+ testRunner.Given("that something is ready", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line 8
- testRunner.And("I have entered <userame> as username", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+ testRunner.And("I have done something else", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line 9
- testRunner.And(string.Format("I have entered the {0} as password", password), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+ testRunner.When("I click on a button", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line 10
- testRunner.And(string.Format("I have entered {0} as the CID number", cid), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
-#line 11
- testRunner.When("I click on Login button", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
-#line 12
- testRunner.Then("I should land on Apex hompage for Agency Agent role", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+ testRunner.Then("I should be able to access app", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             this.ScenarioCleanup();
         }

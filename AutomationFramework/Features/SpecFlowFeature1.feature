@@ -1,16 +1,14 @@
 ﻿Feature: Login
-	As a Agency Agent user,
-	I would like to be able to login into APEX Portal
+	As a user,
+	I would like to be able to do something at the app
 
 @login
 Scenario Outline: Login as a Agency Agent By Example
-	Given that I navigate to the APEX Portal Url
-	And I have entered <userame> as username
-	And I have entered the <password> as password
-	And I have entered <cid> as the CID number
-	When I click on Login button
-	Then I should land on Apex hompage for Agency Agent role
+	Given that something is ready
+	And I have done something else
+	When I click on a button
+	Then I should be able to access app
 	
 	Examples:
 	| username                      | password | cid   |
-	| jimmie.carr@travelleaders.com | zaq1ZAQ! | 94326 |
+	| pepe@travelleaders.com		| zaq1ZAQ! | 94326 |

@@ -59,8 +59,8 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="..\..\..\..\Desktop\AutomationFramework\AutomationFramework\Steps\SpecFlowFeature1Steps.cs">
-      <Link>Steps\SpecFlowFeature1Steps.cs</Link>
+    <Compile Include="..\..\..\source\repos\AutomationFramework\AutomationFramework\Steps\SpecFlowFeature1.cs">
+      <Link>Steps\SpecFlowFeature1.cs</Link>
     </Compile>
     <Compile Include="Browsers.cs" />
     <Compile Include="Features\SpecFlowFeature1.feature.cs">

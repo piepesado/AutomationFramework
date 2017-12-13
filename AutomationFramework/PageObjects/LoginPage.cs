@@ -44,7 +44,6 @@ namespace ApexPortal.Login.Pages
             return new LoginPage(driver);
         }
 
-
         /*
         public HomePage Login()
         {
